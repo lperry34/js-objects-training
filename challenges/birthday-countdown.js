@@ -34,3 +34,12 @@
 */
 
 // YOUR CODE HERE
+function daysUntilDate(year, month, day) {
+  var now = new Date(),
+      dateEnd = new Date(year, month - 1, day), // months are zero-based
+      days = (dateEnd - now) / 1000/60/60/24;   // convert milliseconds to days
+
+  return Math.round(days);
+}
+
+daysUntilDate(2018, 11, 19);

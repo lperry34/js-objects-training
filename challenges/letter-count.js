@@ -31,3 +31,19 @@
 */
 
 // YOUR CODE HERE
+ function letterCount(s) {
+    var count = {};
+    for (var i=0; i<s.length;i++) {
+        var characterCount = s.charAt(i);
+        if (count[characterCount]) {
+           count[characterCount]++;
+        } else {
+          count[characterCount] = 1;
+        }
+    }
+
+    return count;
+};
+
+letterCount("hello");
+

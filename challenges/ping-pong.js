@@ -38,3 +38,13 @@
 */
 
 // YOUR CODE HERE
+var ball = [];
+function pingPong(ball){
+  for (i = 0; i < ball.length; i++){
+    return ball[i];
+  }
+
+
+}
+
+pingPong(1);
